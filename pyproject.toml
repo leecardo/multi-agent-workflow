@@ -1,7 +1,7 @@
 [project]
 name = "multi-agent-workflow"
 version = "0.1.0"
-description = "Add your description here"
+description = "An open-source multi-agent workflow framework for K-12 education built with LangGraph and OpenAI."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -14,5 +14,10 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "pytest>=9.1.1",
     "ruff>=0.15.12",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
